@@ -11,7 +11,13 @@ export default {
   routes: [
     {
       path: '/',
-      component: './HelloWorld',
+      component: '../Layout',
+      routes: [
+        {
+          path: 'HelloWorld',
+          component: './HelloWorld',
+        },
+      ],
     },
     {
       path: '/tab',
