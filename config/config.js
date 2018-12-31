@@ -13,5 +13,9 @@ export default {
       path: '/',
       component: './HelloWorld',
     },
+    {
+      path: '/tab',
+      component: './Tab',
+    },
   ],
 };
