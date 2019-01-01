@@ -15,7 +15,15 @@ export default {
       routes: [
         {
           path: '/',
-          component: './HelloWorld',
+          component: 'HelloWorld',
+        },
+        {
+          path: 'dashboard',
+          routes: [
+            { path: '/dashboard/analysis', component: 'Dashboard/Analysis' },
+            { path: '/dashboard/Monitor', component: 'Dashboard/monitor' },
+            { path: '/dashboard/Workplace', component: 'Dashboard/workplace' },
+          ],
         },
       ],
     },
