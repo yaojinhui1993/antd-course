@@ -5,6 +5,7 @@ export default {
       'umi-plugin-react',
       {
         antd: true,
+        dva: true,
       },
     ],
   ],
@@ -24,6 +25,10 @@ export default {
             { path: '/dashboard/Monitor', component: 'Dashboard/monitor' },
             { path: '/dashboard/Workplace', component: 'Dashboard/workplace' },
           ],
+        },
+        {
+          path: '/puzzlecards',
+          component: 'puzzlecards',
         },
       ],
     },
