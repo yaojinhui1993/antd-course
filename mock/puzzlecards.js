@@ -17,6 +17,10 @@ let random_joke_call_count = 0;
 
 export default {
   'get /dev/random_joke': function(req, res) {
+    res.status(500);
+    res.json();
+    return;
+
     const responseObj =
       random_jokes[random_joke_call_count % random_jokes.length];
 
